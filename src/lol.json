@@ -1,0 +1,110 @@
+{
+    "999": {
+        "text": "Safely aligning a powerful AGI is difficult.",
+        "parents": [
+            1000,
+            1001,
+            1002,
+            1003,
+            1004,
+            1006,
+            1008,
+            1011,
+            1014,
+            1016
+        ]
+    },
+    "1000": {
+        "text": "The Orthogonality Thesis: that there can exist arbitrarily intelligent agents pursuing any kind of goal.",
+        "parents": []
+    },
+    "1001": {
+        "text": "The strong form of the Orthogonality Thesis: there's no extra difficulty or complication in the existence of an intelligent agent that pursues a goal, above and beyond the computational tractability of that goal.",
+        "parents": [
+            1000
+        ]
+    },
+    "1002": {
+        "text": " Instrumental convergence",
+        "parents": []
+    },
+    "1003": {
+        "text": "AGI will not be upper-bounded by human ability or human learning speed. Things much smarter than human would be able to learn from less evidence than humans require.",
+        "parents": []
+    },
+    "1004": {
+        "text": "A cognitive system with sufficiently high cognitive powers, given any medium-bandwidth channel of causal influence, will not find it difficult to bootstrap to overpowering capabilities independent of human infrastructure.",
+        "parents": [
+            1005
+        ]
+    },
+    "1005": {
+        "text": "There's been pretty detailed analysis of what definitely look like physically attainable lower bounds on what should be possible with nanotech. See https://nanosyste.ms/",
+        "parents": []
+    },
+    "1006": {
+        "text": "We need to get alignment right on the 'first critical try'",
+        "parents": [
+            1007
+        ]
+    },
+    "1007": {
+        "text": "Unaligned operation at a dangerous level of intelligence kills everybody on Earth.",
+        "parents": [
+            1004
+        ]
+    },
+    "1008": {
+        "text": "We can't just \"decide not to build AGI\".",
+        "parents": [
+            1009,
+            1010
+        ]
+    },
+    "1009": {
+        "text": "GPUs are everywhere.",
+        "parents": []
+    },
+    "1010": {
+        "text": "Knowledge of algorithms is constantly being improved and published.",
+        "parents": []
+    },
+    "1011": {
+        "text": "We can't just build a very weak system",
+        "parents": [
+            1012,
+            1013
+        ]
+    },
+    "1012": {
+        "text": "'safe-but-useless' tradeoff",
+        "parents": [
+            1014,
+            1015
+        ]
+    },
+    "1013": {
+        "text": "Restricting yourself to doing X will not prevent Facebook AI Research from destroying the world six months later.",
+        "parents": []
+    },
+    "1014": {
+        "text": "We need to align the performance of some large task, a 'pivotal act' that prevents other people from building an unaligned AGI that destroys the world.",
+        "parents": [
+            1013,
+            1015,
+            1017
+        ]
+    },
+    "1015": {
+        "text": "There are no pivotal weak acts.",
+        "parents": []
+    },
+    "1016": {
+        "text": "The best and easiest-found-by-optimization algorithms for solving problems we want an AI to solve, readily generalize to problems we'd rather the AI not solve.",
+        "parents": []
+    },
+    "1017": {
+        "text": "Running AGIs doing something pivotal are not passively safe",
+        "parents": []
+    }
+}

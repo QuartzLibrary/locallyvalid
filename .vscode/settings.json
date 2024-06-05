@@ -1,0 +1,24 @@
+{
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.formatOnSave": true,
+  "editor.lightbulb.enabled": "off",
+  // "editor.inlayHints.enabled": "offUnlessPressed",
+  "rust-analyzer.showUnlinkedFileNotification": false,
+  "rust-analyzer.files.watcher": "server",
+  "terminal.integrated.shellIntegration.history": 10000,
+  "terminal.integrated.scrollback": 10000,
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/test.yml"
+  ],
+}

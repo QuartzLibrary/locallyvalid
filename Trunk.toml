@@ -1,0 +1,3 @@
+[serve]
+address = "127.0.0.1" # The address to serve on.
+port = 8000 # The port to serve on.

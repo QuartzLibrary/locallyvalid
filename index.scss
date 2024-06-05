@@ -1,0 +1,28 @@
+body {
+  .graph {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      overflow-x: scroll;
+      padding-right: 20vw;
+
+      &.single {
+        padding-right: unset;
+      }
+    }
+
+    .card {
+      flex: 0 0 auto;
+      width: calc(100vw - 20vw);
+      margin: 8px 0px 8px 16px;
+      padding: 8px;
+      border: solid gray;
+
+      &.current {
+        border: solid red !important;
+      }
+    }
+  }
+}
