@@ -41,8 +41,8 @@ jobs:
         run: cargo install --version 0.18.3 trunk
 
       - name: Build project
-        run: trunk build --release --verbose --public-url /${{ github.event.repository.name }}
-        # run: trunk build --release --verbose
+        # run: trunk build --release --verbose --public-url /${{ github.event.repository.name }}
+        run: trunk build --release --verbose
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
