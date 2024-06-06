@@ -61,6 +61,7 @@ fn graph(current: RwSignal<u128>, data: RwSignal<Data>) -> impl IntoView {
                 graph_upstream(initial, data.clone(), BTreeSet::new()).into_view(),
                 card(initial, entry).class("current", true).into_view(),
                 graph_downstream(initial, data, BTreeSet::new()).into_view(),
+                explanation().into_view(),
                 html::div()
                     .style("width", "100%")
                     .style("height", "150vh")
@@ -270,6 +271,17 @@ fn empty_card(id: u128, message: impl AsRef<str>) -> HtmlElement<html::Div> {
         .attr("card-id", id)
         .class("card", true)
         .child(message)
+}
+
+fn explanation() -> impl IntoView {
+    html::div()
+    .class("explanation", true)
+    .child(html::p().child("This is a small test to see if an idea I had for better interface for reference world models would work. The following example is picked from ")
+    .child(html::a().attr("href", "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities")
+    .child("AGI Ruin: A List of Lethalities"))
+    .child(", mostly because it's already split into convenient points with bolded claims. I quickly wrote down some dependencies between claims to test, and haven't confirmed they fully make sense yet."))
+    .child(html::p().child("To navigate just scroll sideways. Red cards are active."))
+    .into_view()
 }
 
 impl Data {
