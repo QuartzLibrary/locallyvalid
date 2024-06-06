@@ -271,14 +271,24 @@ fn empty_card(id: u128, message: impl AsRef<str>) -> HtmlElement<html::Div> {
 }
 
 fn explanation() -> impl IntoView {
+    const A: &str = "This is a small test for a better interface to share world models. This mainly tests how natural sideway scrolling feels when used to navigate graphs.";
+    const B: &str = "The example above is picked from ";
+    const C: &str = "AGI Ruin: A List of Lethalities";
+    const C_URL: &str =
+        "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities";
+    const D: &str = ", mostly because it's already split into convenient points with bolded claims. I quickly wrote down some dependencies between claims to test, and haven't confirmed they fully make sense yet.";
+    const E: &str = "To navigate just scroll sideways. Red cards are active.";
     html::div()
-    .class("explanation", true)
-    .child(html::p().child("This is a small test to see if an idea I had for better interface for reference world models would work. The following example is picked from ")
-    .child(html::a().attr("href", "https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities")
-    .child("AGI Ruin: A List of Lethalities"))
-    .child(", mostly because it's already split into convenient points with bolded claims. I quickly wrote down some dependencies between claims to test, and haven't confirmed they fully make sense yet."))
-    .child(html::p().child("To navigate just scroll sideways. Red cards are active."))
-    .into_view()
+        .class("explanation", true)
+        .child(html::p().child(A))
+        .child(
+            html::p()
+                .child(B)
+                .child(html::a().attr("href", C_URL).child(C))
+                .child(D),
+        )
+        .child(html::p().child(E))
+        .into_view()
 }
 
 impl Data {
