@@ -2,20 +2,17 @@
 pub mod leptos_ext;
 pub mod visibility;
 
-use chrono::{DateTime, Utc};
 use leptos::{
-    create_memo, create_render_effect, document, ev, html, html::ToHtmlElement, mount_to_body,
-    on_cleanup, window_event_listener, CollectView, HtmlElement, IntoView, RwSignal, Signal,
-    SignalGet, SignalGetUntracked, SignalSet, SignalWith, SignalWithUntracked, View,
+    ev, html, mount_to_body, HtmlElement, IntoView, RwSignal, SignalGet, SignalGetUntracked,
+    SignalSet, View,
 };
 use serde::{Deserialize, Serialize};
 use std::{
     cell::RefCell,
     collections::{BTreeMap, BTreeSet},
-    ops::{Bound, Deref},
+    ops::Deref,
     rc::Rc,
 };
-use web_sys::{wasm_bindgen::JsCast, HtmlDivElement, Node};
 
 use self::{
     leptos_ext::{ReadSignalExt, WriteSignalExt},
